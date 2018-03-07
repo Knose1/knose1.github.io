@@ -3,6 +3,7 @@ body {
     margin:10px;
 }
 .transImg {
+    -webkit-transition: 0.3s cubic-bezier(1, 1, 1, 1);
     transition: 0.3s cubic-bezier(1, 1, 1, 1);
     border: hidden;
     border-radius: 100px;
