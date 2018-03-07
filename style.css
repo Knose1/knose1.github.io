@@ -1,1 +1,9 @@
-#rep
+#rep {}
+.transImg {
+
+    transition-property: opacity;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: initial;
+
+}
