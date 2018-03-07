@@ -2,7 +2,7 @@ repositories = [
 
     {
     
-        name:"Nya!Bot,
+        name:"Nya!Bot",
         code:"JavaScript",
         tags: [
             "bot",
