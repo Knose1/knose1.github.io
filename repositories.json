@@ -1,7 +1,5 @@
 repositories = [
-
-    {
-    
+    {   
         name:"Nya!Bot",
         code:"JavaScript",
         tags: [
@@ -11,7 +9,5 @@ repositories = [
             "nya-bot",
             "knose1",
         ],
-        
-    },
-
+    }
 ];
