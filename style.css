@@ -1,6 +1,6 @@
 #rep {}
 .transImg {
-    transition: opacity 2s cubic-bezier(1, 1, 1, 1)
+    transition: opacity 1s cubic-bezier(1, 1, 1, 1)
 }
 .transImg:hover {
     opacity:0.5
