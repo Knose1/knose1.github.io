@@ -1,9 +1,7 @@
 #rep {}
 .transImg {
-
-    transition-property: opacity;
-    transition-duration: 1.5s;
-    transition-timing-function: ease-in-out;
-    transition-delay: initial;
-
+    transition: opacity 2s cubic-bezier(1, 1, 1, 1)
+}
+.transImg:hover {
+    opacity:0.5
 }
