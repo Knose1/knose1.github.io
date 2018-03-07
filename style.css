@@ -6,24 +6,62 @@ body {
     -webkit-transition: 0.3s cubic-bezier(1, 1, 1, 1);
     transition: 0.3s cubic-bezier(1, 1, 1, 1);
     border: hidden;
-    border-radius: 100px;
-    width: 200px;
+    border-radius: 100%;
+    width:25%;
+    box-shadow: 0 0 20px #de00ff;
 }
+
 .transImg:hover {
     opacity:0.5;
-    border-radius: 50px;
+    border-radius: 50;
 }
 .menuBar {
-    width:10vw;
-    heigth:auto;
-    padding:7.5vw;
+    margin:10px;
+    font-size:xx-large;
+    width:95%;
+    padding:5vw;
 }
 .menuBar > .mb {
-    font-size:xx-large;
-    
+
+    font-size:x-large;
+    padding:inherit;
+
     -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .menuBar > .mb:hover {
-    padding:inherit;
+    
+    font-size:larger;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    
+    .menuBar {
+        display: flex;
+        flex-direction: column;
+
+        margin-left:auto;
+        margin-right:auto;
+        margin-top:10px;
+
+        font-size:0;
+        width:95%;
+        heigth:auto;
+        padding-top:5px;
+    }
+    .menuBar > .mb {
+        align-content:center;
+        font-size:x-large;
+        padding-left:auto;
+        
+        -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+    .menuBar > .mb:hover {
+        font-size:x-large;
+        padding-left:initial;
+
+    }
+
 }
