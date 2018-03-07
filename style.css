@@ -16,6 +16,6 @@ body {
 .menuBar {
     background-color:#3c3c3e;
 }
-.mb:hover {
+.menuBar > .mb:hover {
     background-color:#565d5b;
 }
