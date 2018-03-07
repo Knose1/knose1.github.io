@@ -14,12 +14,16 @@ body {
     border-radius: 50px;
 }
 .menuBar {
-    -webkit-transition: 0.5s cubic-bezier(1, 1, 1, 1);
-    transition: 0.5s cubic-bezier(1, 1, 1, 1);
-    background-color:#3c3c3e;
-    color:white;
+    width:10vw;
+    heigth:auto;
+    padding:7.5vw;
+}
+.menuBar > .mb {
+    font-size:xx-large;
+    
+    -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .menuBar > .mb:hover {
-    background-color:#565d5b;
-    color:black;
+    padding:inherit;
 }
