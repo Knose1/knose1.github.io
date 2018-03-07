@@ -12,5 +12,10 @@ body {
 .transImg:hover {
     opacity:0.5;
     border-radius: 50px;
-    /*color:#849691;*/
+}
+.menuBar {
+    background-color:#3c3c3e;
+}
+.mb:hover {
+    background-color:#565d5b;
 }
