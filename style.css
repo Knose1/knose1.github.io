@@ -14,8 +14,12 @@ body {
     border-radius: 50px;
 }
 .menuBar {
+    -webkit-transition: 0.5s cubic-bezier(1, 1, 1, 1);
+    transition: 0.5s cubic-bezier(1, 1, 1, 1);
     background-color:#3c3c3e;
+    color:white;
 }
 .menuBar > .mb:hover {
     background-color:#565d5b;
+    color:black;
 }
