@@ -14,6 +14,6 @@ repositories.forEach( m => {
     });
     
     divv.innerHTML =    `<a href="./"${m.url}> ${m.name} </a>` +
-                        `<div class="typecode"><span class="circle", id="${m.code}"> <span class="codename"> ${m.code} </div>` +
+                        `<div class="typecode"><span class="circle", id="${m.code.toLowerCase()}"> <span class="codename"> ${m.code} </div>` +
                         tags;
 });
