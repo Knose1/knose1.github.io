@@ -5,6 +5,10 @@ async function repoLoad() {
         scripting.src = "repositories.json";
     
         document.body.appendChild(scripting);
+        return new Promise(resolve => {
+            setTimeout(() => {
+            }, 2000);
+        });
     }
     await repoaw();
     
