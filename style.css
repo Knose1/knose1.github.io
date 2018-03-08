@@ -38,8 +38,8 @@ body {
     transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 
-/*Adaptation 500px (téléphones)*/
-@media screen and (max-width: 500px) {
+/*Adaptation 550px (téléphones)*/
+@media screen and (max-width: 549px) {
 
     .transImg {
         width: 25%;
@@ -67,8 +67,8 @@ body {
     }
 }
 
-/*Adaptation 500 - 1000 px (tablettes et ordi)*/
-@media screen and (min-width: 500px) and (max-width: 1300px) {
+/*Adaptation 550 - 1000 px (tablettes et ordi)*/
+@media screen and (min-width: 550px) and (max-width: 1300px) {
 
     .transImg {
         width: 20%;
