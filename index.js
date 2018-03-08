@@ -4,7 +4,7 @@ async function repoLoad() {
         scripting.type = "text/javascript";
         scripting.src = "repositories.json";
     
-        document.head.appendChild(scripting);
+        document.body.appendChild(scripting);
     }
     await repoaw();
     
