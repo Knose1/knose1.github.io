@@ -1,5 +1,5 @@
 async function repoLoad() {
-    await function repoaw() => {
+    await function repoaw() {
         var scripting = document.createElement("SCRIPT");
         scripting.type = "text/javascript";
         scripting.src = "repositories.json";
