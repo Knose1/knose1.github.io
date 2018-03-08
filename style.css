@@ -46,6 +46,11 @@ body {
 /*Adaptation 550px (téléphones)*/
 @media screen and (max-width: 549px) {
 
+    .top > span#nya {
+        margin-left:6%;
+        font-size: 9vw;
+    }
+
     .transImg {
         width: 25%;
     }
@@ -53,11 +58,12 @@ body {
     .menuBar {
         display: flex;
         flex-direction: column;
-        
-        margin-left: auto;
-        margin-right: auto;
+
+        text-align: -webkit-right;
+
+        margin-left: 0px;
+        margin-right: 0px;
         margin-top: 15px;
-        
         font-size: 0;
         padding-top: 5px;
     }
@@ -68,7 +74,7 @@ body {
 
     .menuBar > .mb:hover {
         font-size: x-large;
-        padding-left: 9%;
+        padding-right: 20%;
     }
 }
 
