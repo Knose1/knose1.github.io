@@ -24,6 +24,8 @@ async function repoLoad() {
         divv.innerHTML =    `<a href="./"${m.url}> ${m.name} </a>` +
                             `<div class="typecode"><span class="circle", id="${m.code.toLowerCase()}"> <span class="codename"> ${m.code} </div>` +
                             tags;
+        
+        document.body.appendChild(divv);
     });
 }
 
