@@ -1,67 +1,96 @@
-#rep {}
-body {
-    margin:10px;
+#rep {
 }
+
+body {
+    margin: 10px;
+}
+.top{
+    background-color:#d8f1e7;
+    padding:30px;
+}
+
+/*Code général*/
 .transImg {
     -webkit-transition: 0.3s cubic-bezier(1, 1, 1, 1);
     transition: 0.3s cubic-bezier(1, 1, 1, 1);
     border: hidden;
-    border-radius: 100%;
-    width:25%;
+    border-radius: 50%;
     box-shadow: 0 0 20px #de00ff;
 }
 
 .transImg:hover {
-    opacity:0.5;
-    border-radius: 50;
+    opacity: 0.9;
+    border-radius: 25%;
 }
+
 .menuBar {
-    margin:10px;
-    font-size:xx-large;
-    width:95%;
-    padding:5vw;
+    width: 95%;
+    margin-top:1px;
+    padding: 5vw;
 }
+
 .menuBar > .mb {
-
-    font-size:x-large;
-    padding:inherit;
-
+    align-content: center;
+    font-size: x-large;
+    padding: inherit;
     -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
-.menuBar > .mb:hover {
-    
-    font-size:larger;
-    text-decoration: underline;
-}
 
+/*Adaptation 500px (téléphones)*/
 @media screen and (max-width: 500px) {
-    
+
+    .transImg {
+        width: 25%;
+    }
+
     .menuBar {
         display: flex;
         flex-direction: column;
-
-        margin-left:auto;
-        margin-right:auto;
-        margin-top:10px;
-
-        font-size:0;
-        width:95%;
-        heigth:auto;
-        padding-top:5px;
-    }
-    .menuBar > .mb {
-        align-content:center;
-        font-size:x-large;
-        padding-left:auto;
         
-        -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-        transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 15px;
+        
+        font-size: 0;
+        padding-top: 5px;
     }
-    .menuBar > .mb:hover {
-        font-size:x-large;
-        padding-left:initial;
 
+    .menuBar > .mb {
+        padding-left:initial;
     }
+
+    .menuBar > .mb:hover {
+        font-size: x-large;
+        padding-left: 9%;
+    }
+}
+
+/*Adaptation 500 - 1000 px (tablettes et ordi)*/
+@media screen and (min-width: 500px) and (max-width: 1300px) {
+
+    .transImg {
+        width: 20%;
+    }
+
+    .menuBar {
+        font-size: x-large;
+        margin-top:1px;
+    }
+
+    .menuBar > .mb {
+        font-size: x-large;
+        padding: inherit;
+    }
+
+    .menuBar > .mb:hover {
+        font-size: xx-large;
+        text-decoration: underline;
+    }
+    
+}
+
+/*Adaptation 1300px */
+@media screen and (min-width: 1300px) {
 
 }
