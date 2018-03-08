@@ -11,16 +11,21 @@ body {
 }
 
 /*Code général*/
+
+.top > span#nya {
+    color:#ff4ce1;
+}
+
 .transImg {
     -webkit-transition: 0.3s cubic-bezier(1, 1, 1, 1);
     transition: 0.3s cubic-bezier(1, 1, 1, 1);
     border: hidden;
     border-radius: 50%;
-    box-shadow: 0 0 20px #de00ff;
+    box-shadow: 0 0 20px #ff4ce1;
 }
 
 .transImg:hover {
-    opacity: 0.9;
+    opacity: 0.85;
     border-radius: 25%;
 }
 
@@ -70,13 +75,18 @@ body {
 /*Adaptation 550 - 1000 px (tablettes et ordi)*/
 @media screen and (min-width: 550px) and (max-width: 1300px) {
 
+    .top > span#nya {
+        margin-left:6%;
+        font-size: 6vw;
+    }
+
     .transImg {
         width: 20%;
     }
 
     .menuBar {
         font-size: x-large;
-        margin-top:1px;
+        margin-top:10px;
     }
 
     .menuBar > .mb {
@@ -92,6 +102,31 @@ body {
 }
 
 /*Adaptation 1300px */
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1301px) {
+
+    .top > span#nya {
+        margin-left:5%;
+        /*padding-bottom:20px;*/
+        font-size: 7vw;
+    }
+
+    .transImg {
+        width: 20%;
+    }
+
+    .menuBar {
+        font-size: -webkit-xxx-large;
+        margin-top:10px;
+    }
+
+    .menuBar > .mb {
+        font-size: -webkit-xxx-large;
+        padding: inherit;
+    }
+
+    .menuBar > .mb:hover {
+        font-size: larger;
+        text-decoration: underline;
+    }
 
 }
