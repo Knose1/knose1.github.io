@@ -1,6 +1,30 @@
 #rep {
 }
 
+#javascript.circle {
+    background-color: #FFEB3B;
+    width: 10px;
+    display: -webkit-inline-box;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.tag {
+    background-color: rgba(72, 218, 203, 0.1);
+    margin: 5px;
+    border-radius: 5%;
+    padding: 5px 13px;
+    color:#5faedc;
+}
+
+.typecode {
+    margin-bottom:  15px;
+}
+
+.tag:hover {
+    background-color: rgb(220, 245, 242);
+}
+
 body {
     margin: 10px;
 }
