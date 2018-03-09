@@ -1,0 +1,20 @@
+CACHE MANIFEST
+#DATE 2018-03-09
+
+CACHE:
+
+./index.html
+
+./Nya-bot/index.html
+
+./Nya-bot/en/home/index.html
+
+./Nya-bot/fr/home/index.html
+./Nya-bot/fr/anime/index.html
+
+
+NETWORK:
+*
+
+FALLBACK:
+#static.html
