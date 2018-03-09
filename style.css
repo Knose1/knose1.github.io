@@ -39,6 +39,10 @@
 }
 /*Fin de source*/
 
+td.anime {
+    vertical-align: 0;
+}
+
 #rep {
     background-color: white;
     box-shadow: 0 0 6px black;
