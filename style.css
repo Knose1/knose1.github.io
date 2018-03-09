@@ -1,13 +1,10 @@
 #rep {
     background-color: white;
     box-shadow: 0 0 6px black;
-    
-    margin-bottom:100px;
     padding: 30px;
     padding-top: 32px;
     padding-bottom: 30px;
     width: 600px;
-    
     border-color:  black;
     border-radius: 30px;
     border-style: solid;
@@ -73,20 +70,42 @@ body {
 .transImg:hover {
     opacity: 0.85;
     border-radius: 25%;
+    cursor: pointer;
 }
 
 .menuBar {
     width: 95%;
     margin-top:1px;
     padding: 5vw;
+    color: black;
+}
+.menuBar > .mb > a {
+    color: black;
+}
+.menuBar > .mb > a:visited {
+    color: black;
+}
+.menuBar > .mb > a:link {
+    color: black;
+}
+.menuBar > .mb > a:active {
+    color: brown;
+    cursor: pointer;
 }
 
+.menuBar > .mb > a:hover {
+    color: brown;
+    cursor: pointer;
+}
 .menuBar > .mb {
     align-content: center;
     font-size: x-large;
     padding: inherit;
     -webkit-transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
     transition: 0.8s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.menuBar > .mb:hover {
+    color: brown;
 }
 
 /*Adaptation 550px (téléphones)*/
