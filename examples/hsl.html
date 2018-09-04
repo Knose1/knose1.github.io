@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<style>
+        	input {
+            	width:50px;
+            }
+            p.white {
+            	color:white;
+            }
+            p.black {
+            	color:black;
+            }
+    	</style>
+    </head>
+<body onloaded="HSL.change(0,0)">
+	<input type="number" min=0 max=360 oninput="HSL.change(this.value,0)" placeholder="hue">
+	<input type="number" min=0 max=100 oninput="HSL.change(this.value,1)" placeholder="saturation">
+	<input type="number" min=0 max=100 oninput="HSL.change(this.value,2)" placeholder="luminosity">
+    <br>
+    <div class="HSLoutput"></div>
+    
+    <script>
+    	let HSL = {};
+        HSL.value = [0,0,0];
+		HSL.change = function(value,index) {
+        	if (index >= 0 && index <= 3) {
+        		HSL.value[index] = Math.abs(Number(value)) || 0;
+                document.querySelectorAll(".HSLoutput").forEach(HSL_elm => {
+                	HSL_elm.innerHTML = `<p class="white"> hsl(${HSL.value[0]},${HSL.value[1]}%,${HSL.value[2]}%)</p><br>`;
+                    HSL_elm.innerHTML += `<p class="black"> hsl(${HSL.value[0]},${HSL.value[1]}%,${HSL.value[2]}%)</p>`;
+                    
+                    HSL_elm.style.backgroundColor = `hsl(${HSL.value[0]},${HSL.value[1]}%,${HSL.value[2]}%)`
+                });
+            } else 
+            	throw Error(`Index ${index} is a wrong index`);
+        }
+    </script>
+</body>
+
+</html>
