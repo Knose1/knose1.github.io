@@ -12,8 +12,8 @@ repositories = [
         ]
     },
     {   
-        url:"Nya-bot",
-        name:"Nya!Bot",
+        url:"FlashDevelop-libs",
+        name:"FlashDevelop-libs",
         code:"actionscript",
         tags: []
     }
