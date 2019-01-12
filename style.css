@@ -61,13 +61,21 @@ div#rep > a {
     margin-left: 20px;
 }
 
-#javascript.circle {
-    background-color: #FFEB3B;
+.circle {
     width: 10px;
     display: -webkit-inline-box;
     height: 10px;
     border-radius: 50%;
 }
+
+#javascript.circle {
+    background-color: #FFEB3B;
+}
+
+#actionscript.circle {
+    background-color: #882B0F;
+}
+
 
 .tag {
     background-color: rgba(72, 218, 203, 0.1);
