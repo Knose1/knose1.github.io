@@ -2,7 +2,7 @@ repositories = [
     {   
         url:"Nya-bot",
         name:"Nya!Bot",
-        code:"JavaScript",
+        code:"javascript",
         tags: [
             "bot",
             "discord-js",
@@ -10,5 +10,11 @@ repositories = [
             "nya-bot",
             "knose1",
         ],
-    }
+    },
+    {   
+        url:"Nya-bot",
+        name:"Nya!Bot",
+        code:"actionscript",
+        tags: [],
+    },
 ];
