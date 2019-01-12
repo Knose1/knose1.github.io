@@ -9,12 +9,12 @@ repositories = [
             "cat-images",
             "nya-bot",
             "knose1",
-        ],
+        ]
     },
     {   
         url:"Nya-bot",
         name:"Nya!Bot",
         code:"actionscript",
-        tags: [],
-    },
+        tags: []
+    }
 ];
