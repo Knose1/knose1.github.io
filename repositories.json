@@ -1,9 +1,9 @@
-repositories = [
+[
     {   
-        url:"Nya-bot",
-        name:"Nya!Bot",
-        code:"javascript",
-        tags: [
+        "url":"Nya-bot",
+        "name":"Nya!Bot",
+        "code":"javascript",
+        "tags": [
             "bot",
             "discord-js",
             "cat-images",
@@ -12,9 +12,9 @@ repositories = [
         ]
     },
     {   
-        url:"FlashDevelop-libs",
-        name:"FlashDevelop-libs",
-        code:"actionscript",
-        tags: []
+        "url":"FlashDevelop-libs",
+        "name":"FlashDevelop-libs",
+        "code":"actionscript",
+        "tags": []
     }
 ];
