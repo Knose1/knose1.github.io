@@ -12,8 +12,8 @@ repositories = [
         ]
     },
     {   
-        "url":"FlashDevelop-libs",
-        "name":"FlashDevelop-libs",
+        "url":"AS3-Tools",
+        "name":"AS3-Tools",
         "code":"actionscript",
         "tags": []
     }
