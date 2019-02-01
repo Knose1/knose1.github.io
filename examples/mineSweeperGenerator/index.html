@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <script>    
+            const MINE_HEAD = "**`💣      MINESWEEPER     💣`**";
+            const MINE_FOOT = "`⚫                       ⚫`";
+            
+            const TILES = ["||:white_large_square:||","||:one:||","||:two:||","||:three:||","||:four:||","||:five:||","||:six:||","||:seven:||","||:eight:||","||:nine:||"];
+            const BOMB = "||:bomb:||";
+            
+            const BLOCK_BY_LINE = 8;
+            
+            const MIN_NUM_LINE = 3;
+            const MAX_NUM_LINE = 12;
+            
+            const BOMB_SPAWN_COUNT = 8 / 100;
+            
+            class Map {
+                constructor() {
+                    this.height = Math.floor(Math.random() * (MAX_NUM_LINE - MIN_NUM_LINE + 1)) + MIN_NUM_LINE;
+                    
+                    var lArray = [];
+                    var lMaxI = this.height - 1;
+                    for (var lI = 0; lI < lMaxI; lI++) {
+                        lArray[lI] = [];
+                    }
+                    
+                    this.array = lArray;
+                    
+                    this.width = BLOCK_BY_LINE;
+                    this.size = BLOCK_BY_LINE * this.height;
+                    
+                    //TODO : Bomb generator
+                    //TODO : Map Generator
+                }
+                
+                toString() {
+                    //TODO : Implementation
+                }
+            }
+            
+            
+        </script>
+    </head>
+    <body>
+        <div id="result"></div>
+        <script>
+            function generate() {
+                var lMap = new Map();
+                var lGrild = lMap.toString();
+                
+                lGrild = MINE_HEAD + lGrild + MINE_FOOT;
+                
+                document.getElementById("result")
+            }
+        </script>
+    </body>
+</html>
