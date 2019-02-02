@@ -29,7 +29,7 @@
                     this.width = BLOCK_BY_LINE;
                     this.size = BLOCK_BY_LINE * this.height;
                     
-                    this.numBomb = Math.round(this.size + 10);
+                    this.numBomb = Math.round(BOMB_SPAWN_COUNT * this.size);
                     
                     if (this.numBomb > this.size) {
                         this.numBomb = this.size;
