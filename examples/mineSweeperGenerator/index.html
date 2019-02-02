@@ -29,7 +29,42 @@
                     this.width = BLOCK_BY_LINE;
                     this.size = BLOCK_BY_LINE * this.height;
                     
+                    this.numBomb = Math.round(this.size + 10);
+                    
+                    if (this.numBomb > this.size) {
+                        this.numBomb = this.size;
+                    }
+                    
+                    var lBombs = [];
+                    
                     //TODO : Bomb generator
+                    for (lI = this.numBomb; lI > 0; lI--) {
+                        let lPlace = {'x':Math.floor(Math.random() * this.width), 'y':Math.floor(Math.random() * this.height)}; 
+                        
+                        //String is used to able the methode lBombs.indexOf(lPlace)
+                        var lLoopCount = 0;
+                        while (lBombs.indexOf(JSON.stringify(lPlace)) != -1) {
+                            lPlace.x++
+                            if (lPlace.x == this.width) {
+                                lPlace.x = 0;
+                                lPlace.y++;
+                            }
+                            if (lPlace.y == this.height) {
+                                lPlace.y = 0;
+                            }
+                            if (lLoopCount == this.size) {
+                                console.warn("Too mutch bomb");
+                                break;
+                            }
+                        }
+                        if (lLoopCount == this.size) {
+                            break;
+                        }
+                        lBombs.push(JSON.stringify(lPlace));
+                        
+                    }
+                    
+                    this.bombs = lBombs;
                     //TODO : Map Generator
                 }
                 
@@ -46,12 +81,13 @@
         <script>
             function generate() {
                 var lMap = new Map();
-                var lGrild = lMap.toString();
+                //var lGrild = MINE_HEAD + lMap.toString() + MINE_FOOT;
                 
-                lGrild = MINE_HEAD + lGrild + MINE_FOOT;
+                console.log(lMap);
                 
-                document.getElementById("result")
+                //document.getElementById("result").innerHaml = lGrild;
             }
+            generate();
         </script>
     </body>
 </html>
