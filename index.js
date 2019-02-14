@@ -9,7 +9,7 @@
         lDivv.id = "rep";
         lTags = "";
         pData.tags.forEach(tag => {
-            lTags += `<span class="tag">${tag}</span>`
+            lTags += `<span class="tag">${tag.toLowerCase}</span>`
         });
 
         lDivv.innerHTML =    `<a href="./${pData.url}"> ${pData.name} </a>` +
