@@ -76,6 +76,10 @@ div#rep > a {
     background-color: #882B0F;
 }
 
+#html.circle {
+    background-color: #FF0000;
+}
+
 
 .tag {
     background-color: rgba(72, 218, 203, 0.1);
