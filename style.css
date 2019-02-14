@@ -131,11 +131,14 @@ body {
 }
 
 .menuBar {
-    width: 95%;
-    margin-top:1px;
-    padding: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 5vw;
+    padding-bottom: 1vw;
     color: black;
 }
+
 .menuBar > .mb > a {
     color: black;
     text-decoration:none;
