@@ -12,6 +12,15 @@ repositories = [
         ]
     },
     {   
+        "url":"discord-Minesweeper-Generator",
+        "name":"discord-Minesweeper-Generator",
+        "code":"HTML",
+        "tags": [
+            "discord",
+            "minesweeper",
+        ]
+    },
+    {   
         "url":"AS3-Tools",
         "name":"AS3-Tools",
         "code":"actionscript",
