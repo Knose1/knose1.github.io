@@ -10,9 +10,10 @@ fetch("https://api.github.com/users/Knose1/repos").then((r) => {
             lBr = document.createElement("BR");
             lDivv.id = "rep";
             lTags = "";
-            pData.tags.forEach(tag => {
-                lTags += `<span class="tag">${tag}</span>`
-            });
+            if (pData.tags)
+                pData.tags.forEach(tag => {
+                    lTags += `<span class="tag">${tag}</span>`
+                });
 
             lDivv.innerHTML =    `<a href="./${pData.url}"> ${pData.name} </a>` +
                                 `<div class="typecode">` +
