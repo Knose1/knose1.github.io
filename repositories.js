@@ -1,4 +1,4 @@
-repositories = [
+/*repositories = [
     {   
         "url":"Nya-bot",
         "name":"Nya!Bot",
