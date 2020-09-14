@@ -1,8 +1,4 @@
-repositories = null;
-fetch("https://api.github.com/users/Knose1/repos").then((r) => {
-    r.json().then(j => repositories = j);
-});
-/*[
+repositories = [
     {   
         "url":"Nya-bot",
         "name":"Nya!Bot",
