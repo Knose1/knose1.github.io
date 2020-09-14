@@ -39,20 +39,16 @@ fetch("https://api.github.com/users/Knose1/repos").then((r) => {
             fetch("https://api.github.com/repos/knose1/"+rep.name+"/tags").then((r) => {
                 r.json( (j) => {
                     rep.tags = j;
+                    
+                    fetch("https://api.github.com/repos/knose1/"+rep.name+"/languages")
+                    .then((r) => {
+                        r.json( (j) => {
+                            rep.languages = Object.keys(j);
+                            createDiv(rep);
+                        });
+                    });
                 });
             });
-            fetch("https://api.github.com/repos/knose1/"+rep.name+"/languages").then((r) => {
-                r.json( (j) => {
-                    rep.languages = Object.keys(j);
-                    createDiv(rep);
-                });
-            });
-            
-            function lOnFetch() 
-            {
-                fetchCount += 1;
-                if (fetchNedded == 2) createDiv(rep);
-            }
         });
     });
 });
