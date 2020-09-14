@@ -15,12 +15,14 @@ fetch("https://api.github.com/users/Knose1/repos").then((r) => {
                     lTags += `<span class="tag">${tag}</span>`
                 });
 
-            lDivv.innerHTML =    `<a href="./${pData.url}"> ${pData.name} </a>` +
-                                `<div class="typecode">` +
-                                    `<span class="circle", id="${pData.code.toLowerCase()}"></span>` +
-                                    `<span class="codename"> ${pData.code} </span>` +
-                                `</div>` +
-                                lTags;
+            lDivv.innerHTML =  `<a href="./${pData.url}"> ${pData.name} </a>`;
+            if (pData.code) 
+                lDivv.innerHTML += 
+                    `<div class="typecode">` +
+                        `<span class="circle", id="${pData.code.toLowerCase()}"></span>` +
+                        `<span class="codename"> ${pData.code} </span>` +
+                    `</div>`;
+            lDivv.innerHTML += lTags;
             document.body.appendChild(lDivv);
             document.body.appendChild(lBr);
         });
