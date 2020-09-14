@@ -1,5 +1,5 @@
 fetch("https://api.github.com/users/Knose1/repos").then((r) => {
-    r.json().then(repositories => () => {
+    r.json().then(repositories => {
     
         let lDivv;
         let lBr;
